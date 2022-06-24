@@ -20,3 +20,4 @@ This repository contains the coding problems solved in Java DSA.
 <li><em> ArrayRev :- Program to Reverse an Array</em></li>
 <li><em> RemoveDup :- To Remove Duplicates elements from a Sorted Array. </em></li>
 <li><em> MoveZeroes :- Moving Zeroes to the End of Array </em></li>
+<li><em> LeftRotateArr :- Programs to Left Rotate an Array by One and 'd' positions respectively in counter-clockwise fashion </em></li>
