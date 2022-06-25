@@ -1,5 +1,5 @@
 package Arrays;
-// Problem to find the leader numbers in an array
+// Program to find the leader numbers in an array
 public class LeadersArr {
 
     public static void solutionNaive(int[] arr) {
