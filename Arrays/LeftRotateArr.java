@@ -12,7 +12,8 @@ public class LeftRotateArr {
         return arr;
     }
 
-    public static int[] lRotateD(int[] arr, int d) { // Time Complexity
+    public static int[] lRotateD(int[] arr, int d) { // Time Complexity : Theta(n), Space complexity : Theta(n)
+        d %= arr.length;
         int[] newArr = new int[arr.length];
         int temp;
         for(int i = 0;i<arr.length;i++){
@@ -22,17 +23,42 @@ public class LeftRotateArr {
             }
             newArr[temp] = arr[i];
         }
-
         return newArr;
+    }
+
+    public static int[] lRotateDEff(int[] arr, int d) {
+        d %= arr.length;
+        arr = reverse(arr,0,d-1);
+        arr = reverse(arr,d,arr.length-1);
+        arr = reverse(arr,0, arr.length-1);
+        return arr;
+    }
+
+    public static int[] reverse(int[] arr, int lower, int higher){ // For usage by lRotateDEff Method
+        while(lower < higher){
+            int temp = arr[lower];
+            arr[lower] = arr[higher];
+            arr[higher] = temp;
+
+            lower++;
+            higher--;
+        }
+        return arr;
     }
 
     public static void main(String[] args) {
         int[] arr = new int[]{1,2,3,4,5,6,7};
         int[] arr2 = new int[]{10,20,30,40,50};
-        arr = lRotateOne(arr);
+        int[] arr3 = new int[]{1,2,3,4,5};
+
+        arr = lRotateOne(arr); //Left Rotate by One position
         System.out.println(Arrays.toString(arr));
-        arr2 = lRotateD(arr2,2);
+
+        arr2 = lRotateD(arr2,4); //Left Rotate by D positions
         System.out.println(Arrays.toString(arr2));
+
+        arr3 = lRotateDEff(arr3,2);
+        System.out.println(Arrays.toString(arr3));
     }
 
 }
