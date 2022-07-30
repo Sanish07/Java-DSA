@@ -24,4 +24,9 @@ This repository contains the coding problems solved in Java DSA.
 <li><em> LeadersArr :- Program to find the leader numbers in an array(sorted or unsorted). </em></li>
 <li><em> MaxDifference :- Maximum Difference Problem with Order - Program to find maximum value of arr[j] - arr[i] such that j > i </em></li>
 <li><em> FrequencySortedArr :- Program to find the frequencies of each unique number in a sorted array. </em></li>
+<li><em> MaxOnes :- Problem to find the maximum number of consecutive 1's in a binary array. </em></li>
+<li><em> StockBS :- Stock Buy And Sell Problem, program to find maximum profit in buying and selling of stocks on different days. </em></li>
+<li><em> TrapRainwater :- Program to find the units of water that can be stored/trapped within a given set of bars. </em></li>
+<li><em> MaxSumSubArr :- Program to Find Subarray having maximum sum of elements. </em></li>
+<li><em> LongestEvenOdd :- Program to find the longest subarray with alternate appearing Even-Odd Numbers. </em></li>
 
